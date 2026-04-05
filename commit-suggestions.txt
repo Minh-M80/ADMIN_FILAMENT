@@ -1,0 +1,32 @@
+Goi y commit de tu commit len GitHub/GitLab:
+
+1. chore: khoi tao du an Laravel 11 va cai dat Filament 3
+git add composer.json composer.lock artisan package.json phpunit.xml vite.config.js bootstrap/app.php bootstrap/providers.php routes/web.php public resources tests
+
+2. feat: cau hinh admin panel va doi primary color Filament
+git add app/Providers/Filament/AdminPanelProvider.php
+
+3. feat: tao schema MSSV cho users categories products va cac bang he thong
+git add app/Models/User.php app/Models/Category.php app/Models/Product.php app/Enums/ProductStatus.php config/database.php database/migrations/0001_01_01_000000_create_users_table.php database/migrations/0001_01_01_000001_create_cache_table.php database/migrations/0001_01_01_000002_create_jobs_table.php database/migrations/2026_04_05_015840_create_categories_table.php database/migrations/2026_04_05_015841_create_products_table.php
+
+4. feat: xay dung Category Resource voi auto slug va bo loc hien thi
+git add app/Filament/Resources/CategoryResource.php app/Filament/Resources/CategoryResource
+
+5. feat: xay dung Product Resource voi grid rich editor upload anh va dinh dang VND
+git add app/Filament/Resources/ProductResource.php app/Filament/Resources/ProductResource
+
+6. feat: bo sung discount_percent va logic tinh gia sau giam
+Khong can git add nua vi noi dung nay da nam trong commit 5.
+Neu muon giu du lich su 8 commit, dung lenh:
+git commit --allow-empty -m "feat: bo sung discount_percent va logic tinh gia sau giam"
+
+7. chore: them seeder du lieu mau va tai khoan admin mac dinh
+git add database/seeders/DatabaseSeeder.php database/factories/UserFactory.php
+
+8. docs: bo sung huong dan chay project va ghi chu cau hinh database
+git add README.md README.txt .env.example commit-suggestions.txt
+
+Goi y thao tac:
+- Chay tung lenh git add o tren.
+- Sau moi buoc dung: git commit -m "noi dung commit"
+- Khong nen dua `database/database.sqlite` va `public/storage` vao repo.
